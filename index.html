@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Treasure Hunt</title>
+    <link rel="icon" href="https://minesweepergame.com/image/strategy/minesweeper-xp.png">
+    <link rel="stylesheet" href="treasurehunt.css">
+</head>
+
+
+
+<body>
+    <h1 id="tp">Can you find the treasure?</h1>
+    
+    <a href="#Instructions">
+        <button> Show me the rules</button>
+    </a>
+    <h2>Rules</h2>
+    <ul>
+        <li>Click the boes to reveal what's on the map</li>
+        <li>If you click on the bomb, you lose</li>
+        <li>If you click on the treasure, you win</li>
+    </ul>
+    <h3 id="Instructions">Instructions</h3>
+    <ul>
+        <li 
+        class="white-drop-shadow"
+        >Minesweeper is a game where mines are hidden in a grid of squares. Safe squares contain numbers telling you
+            how many mines touch each square. You can use the number clues to solve the game by opening the safe
+            squares. If you click on a mine you lose the game.
+
+            Windows Minesweeper always makes the first click safe. You open squares with the left mouse button and put
+            flags on mines with the right mouse button. Pressing the right mouse button again puts a questionmark on the
+            square. When you open a square that does not touch a mine, the square will be empty and nearby squares will
+            open in all directions until squares contain numbers. A common strategy for starting games is to randomly
+            click until you get a big opening with lots of numbers.
+
+            Chording is when you press both mouse buttons at the same time. If you flag all mines touching a number,
+            chording on the number opens the remaining squares. This can save you a lot of work! However, if you place
+            the correct number of flags on the wrong squares, chording will explode the mines.
+
+            The three difficulty levels are Beginner (8x8 or 9x9 with 10 mines), Intermediate (16x16 with 40 mines) and
+            Expert (30x16 with 99 mines). The game ends when all safe squares have been opened. A counter shows the
+            number of unflagged mines and a clock shows your time in seconds. Minesweeper saves your best time for each
+            difficulty level.</li>
+    </ul>
+
+
+    <img src="https://live.staticflickr.com/28/43132632_69a164f2b9.jpg" alt="">
+    <br>
+    <br>
+    
+    <div class="ship">
+
+
+    </div>
+   
+    <table  border=10>
+        <tr>
+          <td id="one" onclick="treasure('one')" >1</td>
+          <td id="two" onclick="treasure('two')">2</td>
+          <td id="three" onclick="treasure('three')">3</td>
+          <td id="four" onclick="treasure('four')">4</td>
+
+    
+        </tr>
+        <tr>
+          <td id="five" onclick="treasure('five')" >5</td>
+          <td id="six" onclick="treasure('six')" >6</td>
+          <td id="seven" onclick="treasure('seven')" >7</td>
+          <td id="eight" onclick="treasure('eight')" >8</td>
+        </tr>
+        <tr>
+            <td id="nine" onclick="treasure('nine')" >9</td>
+            <td id="ten" onclick="treasure('ten')" >10</td>
+            <td id="eleven" onclick="treasure('eleven')" >11</td>
+            <td id="twelve" onclick="treasure('twelve')">12</td>
+        </tr>
+        <tr>
+            <td id="thirteen" onclick="treasure('thirteen')">13</td>
+            <td id="fourteen" onclick="treasure('fourteen')">14</td>
+            <td id="fifteen" onclick="treasure('fifteen')">15</td>
+            <td id="sixteen" onclick="treasure('sixteen')">16</td>
+          </tr>
+      </table>
+    <footer>&copy March Jumspstart Jorge|Darwin |
+        <a href="#top">Back to the Top|</a>
+        <a href="https://minesweepergame.com/strategy.php#:~:text=Windows%20Minesweeper%20always%20makes%20the,a%20questionmark%20on%20the%20square."
+            target="_blank">More Rules</a>
+    </footer>
+    <script type="text/javascript" src="treasureHunt.js"></script>
+</body>
+
+</html>
